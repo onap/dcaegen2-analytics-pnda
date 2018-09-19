@@ -1,0 +1,12 @@
+format: ves
+input_topic: ves.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: nic
+
+ves_telemetry:
+  - path: measurementsForVfScalingFields/vNicUsageArray
+    keys:
+      - name: vNicIdentifier
+    content:
+      - name: receivedTotalPacketsDelta

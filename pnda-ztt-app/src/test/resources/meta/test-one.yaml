@@ -1,0 +1,14 @@
+input_topic: telemetry
+output_topic: timeseries
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters
+    keys:
+      - name: interface-name
+        display_name: "Interface Name"
+    content:
+      - name: bytes-received
+        display_name: "Bytes Received"
+
+      - name: bytes-sent
+        display_name: "Bytes Sent"
