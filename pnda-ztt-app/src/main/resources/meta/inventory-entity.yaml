@@ -1,0 +1,27 @@
+input_topic: telemetry.avro
+processor: inventory
+output_topic: inventory
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-invmgr-oper:inventory/entities/entity/attributes/inv-basic-bag
+    keys:
+      - name: name
+        display_name: "Entity Name"
+    content:
+      - name: serial-number
+        display_name: "Serial Number"
+
+      - name: description
+        display_name: "Description"
+
+      - name: manufacturer-name
+        display_name: "Manufacturer"
+
+      - name: model-name
+        display_name: "Model Name"
+
+      - name: software-revision
+        display_name: "Software Revision"
+
+      - name: vendor-type
+        display_name: "Vendor OID"

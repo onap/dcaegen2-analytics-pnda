@@ -1,0 +1,58 @@
+format: cisco.xr.telemetry
+input_topic: telemetry.avro
+processor: inventory
+output_topic: inventory
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/summaries/summary
+    keys:
+      - name: device-id
+        display_name: "Device Id"
+      - name: interface-name
+        display_name: "Interface Name"
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: chassis-id
+        display_name: "Chassis Id"
+
+      - name: device-id
+        display_name: "Device Id"
+
+      - name: port-id-detail
+        display_name: "Port Id"
+
+      - name: receiving-interface-name
+        display_name: "Receiving Interface Name"
+
+      - name: enabled-capabilities
+        display_name: "Enabled Capabilities"
+  - path: Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/devices/device
+    keys:
+      - name: device-id
+        display_name: "Device Id"
+      - name: interface-name
+        display_name: "Interface Name"
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: lldp-neighbor.chassis-id
+        display_name: "Chassis Id"
+  - path: Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/neighbors/details/detail
+    keys:
+      - name: device-id
+        display_name: "Device Id"
+      - name: interface-name
+        display_name: "Interface Name"
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: lldp-neighbor.chassis-id
+        display_name: "Chassis Id"
+  - path: Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/interfaces/interface
+    keys:
+      - name: interface-name
+      - name: node-name
+    content:
+      - name: interface-name
+      - name: if-index

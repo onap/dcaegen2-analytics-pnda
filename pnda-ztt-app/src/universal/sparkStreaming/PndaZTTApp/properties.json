@@ -1,0 +1,10 @@
+{
+    "main_jar": "PndaZTTApp.jar",
+    "main_class": "com.cisco.ztt.App",
+    "log_level": "INFO",
+    "batch_size_seconds" : "2",
+    "processing_parallelism" : "1",
+    "checkpoint_path": "",
+    "input_topic": "ves.avro",
+    "consume_from_beginning": "false"
+}

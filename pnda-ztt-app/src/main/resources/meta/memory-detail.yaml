@@ -1,0 +1,31 @@
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: memory
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/detail
+    keys:
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: allocated-memory
+        display_name: "Allocated Memory"
+
+      - name: free-application-memory
+        display_name: "Free Application Memory"
+
+      - name: free-physical-memory
+        display_name: "Free Physical Memory"
+
+      - name: ram-memory
+        display_name: "RAM Memory"
+
+      - name: program-data
+        display_name: "Program Data"
+
+      - name: program-stack
+        display_name: "Program Stack"
+
+      - name: program-text
+        display_name: "Program Text"
