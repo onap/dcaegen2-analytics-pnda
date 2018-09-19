@@ -1,0 +1,36 @@
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: interface
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters
+    keys:
+      - name: interface-name
+        display_name: "Interface Name"
+    content:
+      - name: bytes-received
+        display_name: "Bytes Received"
+        ts_name: bytes-in                  # rename the metric in OpenTSDB
+
+      - name: bytes-sent
+        display_name: "Bytes Sent"
+        ts_name: bytes-out                 # rename the metric in OpenTSDB
+
+      - name: packets-received
+        display_name: "Packets Received"
+
+      - name: packets-sent
+        display_name: "Packets Sent"
+
+      - name: broadcast-packets-received
+        display_name: "Broadcast Packets Received"
+
+      - name: broadcast-packets-sent
+        display_name: "Broadcast Packets Sent"
+
+      - name: multicast-packets-received
+        display_name: "Multicast Packets Received"
+
+      - name: multicast-packets-sent
+        display_name: "Multicast Packets Sent"
