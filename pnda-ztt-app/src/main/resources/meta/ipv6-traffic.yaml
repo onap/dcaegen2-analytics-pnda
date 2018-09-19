@@ -1,0 +1,16 @@
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: ipv6
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-ipv6-io-oper:ipv6-io/nodes/node/statistics/traffic
+    keys:
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: ipv6.total-packets
+        display_name: "Total IPV6 Packets"
+
+      - name: icmp.total-messages
+        display_name: "Total ICMP Messages"

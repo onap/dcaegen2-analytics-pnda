@@ -1,0 +1,8 @@
+[
+    {
+        "name": "nic.receivedTotalPacketsDelta"
+    },
+    {
+        "name": "cpu.percentUsage"
+    }
+]
