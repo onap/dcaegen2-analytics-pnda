@@ -1,0 +1,11 @@
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: logging
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-infra-syslog-oper:syslog/logging-statistics
+    content:
+      - name: buffer-logging-stats.message-count
+        ts_name: message-count
+        display_name: "Serial Number"
