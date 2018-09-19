@@ -1,0 +1,19 @@
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: cpu
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization
+    keys:
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: total-cpu-one-minute
+        display_name: "One-minute CPU Total"
+
+      - name: total-cpu-five-minute
+        display_name: "Five-minute CPU Total"
+
+      - name: total-cpu-fifteen-minute
+        display_name: "Fifteen-minute CPU Total"

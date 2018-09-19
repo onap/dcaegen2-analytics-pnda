@@ -1,0 +1,23 @@
+format: cisco.xr.telemetry
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: lldp.stats
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-ethernet-lldp-oper:lldp/nodes/node/statistics
+    keys:
+      - name: node-name
+        display_name: "Node Name"
+    content:
+      - name: received-packets
+      - name: transmitted-packets
+      - name: aged-out-entries
+      - name: bad-packets
+      - name: discarded-packets
+      - name: discarded-tl-vs
+      - name: encapsulation-errors
+      - name: out-of-memory-errors
+      - name: queue-overflow-errors
+      - name: table-overflow-errors
+      - name: unrecognized-tl-vs
