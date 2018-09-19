@@ -1,0 +1,27 @@
+format: cisco.xr.telemetry
+input_topic: telemetry.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: fib
+
+xr_telemetry:
+  - path: Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/fib-summaries/fib-summary
+    keys:
+      - name: node-name
+        display_name: "Node Name"
+      - name: protocol-name
+        display_name: "Protocol Name"
+      - name: vrf-name
+        display_name: "VRF Name"
+    content:
+      - name: extended-prefixes
+        display_name: "Num Extended Prefixes"
+
+      - name: forwarding-elements
+        display_name: "Num Forwarding Elements"
+
+      - name: next-hops
+        display_name: "Num Next Hops"
+
+      - name: routes
+        display_name: "Num Routes"

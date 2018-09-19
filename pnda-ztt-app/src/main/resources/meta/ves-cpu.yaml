@@ -1,0 +1,12 @@
+format: ves
+input_topic: ves.avro
+processor: timeseries
+output_topic: timeseries
+timeseries_namespace: cpu
+
+ves_telemetry:
+  - path: measurementsForVfScalingFields/cpuUsageArray
+    keys:
+      - name: cpuIdentifier
+    content:
+      - name: percentUsage
