@@ -1,0 +1,164 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a76adc5_dfe20e2f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "More descriptive commit msg (without abbv) will help",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 36
+      },
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_9d724cac",
+        "filename": "pnda-ztt-app/Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "This makefile should be invoked from pom (using exec-maven-plugin); will this be part of subsequent update?",
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_bfbcf207",
+        "filename": "pnda-ztt-app/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "How will this work with LF infrastructure?",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 14
+      },
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_5f5cbeed",
+        "filename": "pnda-ztt-app/data-source/producer.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "Include license header",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_9da9ece1",
+        "filename": "pnda-ztt-app/pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "pom to be updated build the underlying app code",
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_3d39b8d8",
+        "filename": "pnda-ztt-app/src/main/scala/com/cisco/pnda/model/DataPlatformEvent.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "missing license header",
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_5d36f4e8",
+        "filename": "pnda-ztt-app/src/main/scala/com/cisco/pnda/model/StaticHelpers.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "license header",
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a76adc5_1d307ce7",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-27T23:04:49Z",
+      "side": 1,
+      "message": "pls change to pnda-utils",
+      "range": {
+        "startLine": 33,
+        "startChar": 8,
+        "endLine": 33,
+        "endChar": 32
+      },
+      "revId": "d2b56f7f8b72faa748c972f7ec92cab2ae8860e0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
