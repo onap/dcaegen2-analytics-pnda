@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bada0100_903314f6",
+        "filename": "pom.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-09-28T21:26:12Z",
+      "side": 1,
+      "message": "Are you considering hosting all pnda app code under this same repo? Currently separate repo is being created for each services in DCAE. My understanding this repo will be targeted for common library/util function hence was suggesting that name",
+      "range": {
+        "startLine": 33,
+        "startChar": 14,
+        "endLine": 33,
+        "endChar": 23
+      },
+      "revId": "efc41e403dac9db188af59f2f618b647fdd072b2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
