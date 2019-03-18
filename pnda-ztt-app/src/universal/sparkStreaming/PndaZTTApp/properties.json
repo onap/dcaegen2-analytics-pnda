@@ -6,5 +6,6 @@
     "processing_parallelism" : "1",
     "checkpoint_path": "",
     "input_topic": "ves.avro",
-    "consume_from_beginning": "false"
+    "consume_from_beginning": "false",
+    "spark_version": "2"
 }
