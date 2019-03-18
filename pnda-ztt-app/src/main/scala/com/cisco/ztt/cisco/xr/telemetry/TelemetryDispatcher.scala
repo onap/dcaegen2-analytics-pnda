@@ -62,7 +62,7 @@ class TelemetryDispatcher(unit: Unit) extends Serializable with Transformer {
             }
         } catch {
             case t: Throwable => {
-                Holder.logger.error("Failed to parse JSON: " + t.getLocalizedMessage)
+                Holder.logger.error("Failed to parse JSON: " + t.getClass().getName() + " : " + t.getLocalizedMessage)
                 (false, Set[Payload]())
             }
         }
