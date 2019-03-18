@@ -1,6 +1,7 @@
-SERVER=https://knox.example.com:8443/gateway/pnda/deployment
+SERVER=https://knox.example.com:8443/gateway/pnda/repository
 APP=src/universal/sparkStreaming/PndaZTTApp/PndaZTTApp.jar
-PACKAGE=pnda-ztt-app-0.0.3.tar.gz
+PACKAGE=pnda-ztt-app-0.0.4.tar.gz
+DEBUG=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
 
 app:		## Build the application jar
 	sbt assembly
@@ -9,13 +10,13 @@ package:	## Build the deployable package
 	sbt 'universal:packageZipTarball'
 
 deploy:		## Deploy the package to PNDA cluster
-	curl -k -u pnda:pnda -X PUT $(SERVER)/packages/$(PACKAGE) --data-binary @target/universal/$(PACKAGE) > /dev/null
+	curl -k -u pnda:pnda -X PUT $(SERVER)/packages/ --upload-file target/universal/$(PACKAGE) > /dev/null
 
 list:		## Show the deployed packages
 	curl $(SERVER)/packages
 
 delete:		## Delete the deployed package
-	curl -XDELETE $(SERVER)/packages/$(PACKAGE)
+	curl -k -u pnda:pnda -XDELETE $(SERVER)/packages/$(PACKAGE)
 
 test/PndaZTTApp.jar:	$(APP) test/application.properties
 	cp $< $@

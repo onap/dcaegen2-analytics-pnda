@@ -65,7 +65,7 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>${project.build.directory}/universal/${project.name}-0.0.3.tar.gz</file>
+                  <file>${project.build.directory}/universal/${project.name}-0.0.4.tar.gz</file>
                   <type>tar.gz</type>
                   <classifier>app</classifier>
                 </artifact>
