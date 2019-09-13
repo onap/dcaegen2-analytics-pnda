@@ -36,8 +36,10 @@ limitations under the License.
 
   <modules>
     <module>pnda-ztt-app</module>
+<!-- 
     <module>pnda-mirror-container</module>
     <module>pnda-bootstrap-container</module>
+-->
   </modules>
 
 </project>
